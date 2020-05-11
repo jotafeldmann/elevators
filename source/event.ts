@@ -1,5 +1,3 @@
-const events = []
-
 class EventsCollector {
     private name: string
     private events: object = {}
