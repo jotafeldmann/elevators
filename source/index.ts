@@ -14,9 +14,9 @@ const loggerBuilding = new EventsEmitter('Building', logger)
 const elevatorCommonProps = { initialFloor: 1, speed: speedInMiliseconds, emiter: loggerElevator }
 
 const elevatorsList = [
-    new Elevator({ id: '1', ...elevatorCommonProps, initialFloor: 1 }),
-    new Elevator({ id: '2', ...elevatorCommonProps, initialFloor: 1 }),
-    new Elevator({ id: '3', ...elevatorCommonProps, initialFloor: 1 }),
+    new Elevator({ id: '1', ...elevatorCommonProps }),
+    new Elevator({ id: '2', ...elevatorCommonProps }),
+    new Elevator({ id: '3', ...elevatorCommonProps }),
 ]
 
 const building = new Building(floors, elevatorsList, loggerBuilding)
