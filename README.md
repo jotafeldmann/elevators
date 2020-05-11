@@ -8,7 +8,7 @@ Simulating elevators
 
 ## How to use
 
-- Install [Node and NPM](https://nodejs.org/en/download/)
+- Install [Node 13 and NPM](https://nodejs.org/en/download/)
 
 - Clone
 ```bash
