@@ -1,10 +1,11 @@
 # elevators
-Simulating elevators
+Simulate elevators service, given a number of floors X elevators
 
 ## Purpose
 
+Old hobby idea/excuse, to:
 - Learn TypeScript
-- Simulate elevators service, given a number of floors X elevators
+- Learn basic AI
 
 ## How to use
 
