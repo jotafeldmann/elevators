@@ -24,3 +24,7 @@ make install
 ```bash
 make
 ```
+
+## Preview
+
+![Preview](docs/preview.png)
