@@ -31,14 +31,14 @@ make
 
 ## Roadmap
 
+- [x] [TypeScript setup](https://www.typescriptlang.org/docs/handbook)
 - [x] Request elevator at floors
 - [x] Add watch changes and reload task
 - [x] Add event controller
 - [x] Add basic visual interface
 - [x] Add continuous flow of requests
 - [ ] Add tests to basic classes
-- [ ] Dynamic designation algorithm
-- [ ] Add simulation tests and cases
+- [ ] Add simulation cases results
 - [ ] Request floors from elevators (`building.requestElevatorAtFloor().then(e => e.requestFloor(5))`)
 - [ ] Limit and control number of people inside elevators
 - [ ] Add different rules for elevators (e.g. elevator 2 only receive requests from last floors)
