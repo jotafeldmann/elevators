@@ -1,3 +1,4 @@
+// TODO: refactor everything
 import { Elevator } from './elevator'
 import { Building } from './building'
 
@@ -10,7 +11,7 @@ const makeFloors = (width, building: Building, elevators: Elevator[] = []) => {
     
     let floor = `|${'_'.repeat(width)}|`
 
-    elevators.map((e, i) => {
+    elevators.forEach((e, i) => {
         const floor = e.getFloor()
         elevatorMap[floor] = elevatorMap[floor] ? elevatorMap[floor] : {}
         elevatorMap[floor][e.getId()] = {
@@ -38,7 +39,7 @@ const makeFloors = (width, building: Building, elevators: Elevator[] = []) => {
 
             template[width + 1] = `| ${count}`
 
-            Object.keys(e).map(k => {
+            Object.keys(e).forEach(k => {
                 const iconLength = e[k].icon.length
                 const i = e[k].index
                 let index = Math.floor(middle * i) - iconLength
