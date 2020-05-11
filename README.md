@@ -37,7 +37,7 @@ make
 - [x] Add event controller
 - [x] Add basic visual interface
 - [x] Add continuous flow of requests
-- [ ] Add tests to basic classes
+- [ ] Add `make tests` to basic classes
 - [ ] Add `make lint`, `make lint/fix` and `make watch` (watch, lint, tests)
 - [ ] Add CI
 - [ ] Add CLI/dynamic parameters (number of floors, elevators, speed)
