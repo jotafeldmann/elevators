@@ -39,6 +39,7 @@ make
 - [x] Add continuous flow of requests
 - [ ] Add tests to basic classes
 - [ ] Add `make lint`, `make lint/fix` and `make watch` (watch, lint, tests)
+- [ ] Add CI
 - [ ] Add CLI/dynamic parameters (number of floors, elevators, speed)
 - [ ] Add metrics (e.g. waiting time, movements)
 - [ ] Add simulation cases results
