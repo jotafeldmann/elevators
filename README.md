@@ -38,6 +38,7 @@ make
 - [x] Add basic visual interface
 - [x] Add continuous flow of requests
 - [ ] Add tests to basic classes
+- [ ] Add CLI/dynamic parameters (number of floors, elevators, speed)
 - [ ] Add metrics (e.g. waiting time, movements)
 - [ ] Add simulation cases results
 - [ ] Request floors from elevators (`building.requestElevatorAtFloor().then(e => e.requestFloor(5))`)
