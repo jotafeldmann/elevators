@@ -3,12 +3,13 @@ Simulating elevators
 
 ## Purpose
 
-- Learn TypeScript
 - Simulate elevators service, given a number of floors X elevators
+- Learn TypeScript
+- Learn Deno
 
 ## How to use
 
-- Install [Node 13 and NPM](https://nodejs.org/en/download/)
+- Install [Deno 1.0.0](https://deno.land/)
 
 - Clone
 ```bash
@@ -37,6 +38,7 @@ make
 - [x] Add event controller
 - [x] Add basic visual interface
 - [x] Add continuous flow of requests
+- [x] Converted to Deno
 - [ ] Add tests to basic classes
 - [ ] Add CLI/dynamic parameters (number of floors, elevators, speed)
 - [ ] Add metrics (e.g. waiting time, movements)
