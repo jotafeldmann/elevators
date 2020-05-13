@@ -1,9 +1,9 @@
 # elevators
-Simulate elevators service, given a number of floors X elevators
+Simulate elevators service, given a number of floors X elevators.
 
 ## Purpose
 
-- Simulate elevators service, given a number of floors X elevators
+- Simulate elevators service, given a number of floors X elevators.
 - Learn TypeScript
 - Learn Deno
 
