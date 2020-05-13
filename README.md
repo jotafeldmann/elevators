@@ -30,6 +30,10 @@ make
 
 ![Preview](docs/preview.png)
 
+## Deno styleguide
+
+https://github.com/denoland/deno/blob/master/docs/contributing/style_guide.md
+
 ## Roadmap
 
 - [x] [TypeScript setup](https://www.typescriptlang.org/docs/handbook)
