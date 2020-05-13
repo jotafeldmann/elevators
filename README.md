@@ -1,4 +1,4 @@
-# elevators
+# elevators ![CI](https://github.com/jotafeldmann/elevators/workflows/CI/badge.svg)
 Simulate elevators service, given a number of floors X elevators.
 
 ## Purpose
