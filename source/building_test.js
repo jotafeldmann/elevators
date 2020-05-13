@@ -3,7 +3,6 @@ import { equal } from "https://deno.land/std/testing/asserts.ts";
 import { EventsCollector, EventsEmitter } from "./event.ts";
 import { Elevator } from "./elevator.ts";
 import { Building } from "./building.ts";
-import { build } from "./interface.ts";
 
 const floors = 10;
 const speedInMiliseconds = 200;
