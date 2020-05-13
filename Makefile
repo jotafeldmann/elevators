@@ -1,4 +1,4 @@
-ENTRY_POINT := index.ts
+ENTRY_POINT := mod.ts
 GO_TO_SOURCE := cd source
 
 default:
