@@ -21,9 +21,23 @@ git clone https://github.com/jotafeldmann/elevators
 make install
 ```
 
-- Run (dev mode, watch changes and reload)
+- Test
+```bash
+make test
+```
+
+- Default/dev (dev mode, watch changes and reload)
 ```bash
 make
+
+#or
+
+make dev
+```
+
+- Run (prod env)
+```bash
+make run
 ```
 
 ## Preview
@@ -32,7 +46,12 @@ make
 
 ## Deno styleguide
 
-https://github.com/denoland/deno/blob/master/docs/contributing/style_guide.md
+- https://github.com/denoland/deno/blob/master/docs/contributing/style_guide.md
+
+## Testing
+
+- https://github.com/denoland/deno/blob/master/docs/testing.md
+- https://deno.land/std/testing/
 
 ## Roadmap
 
