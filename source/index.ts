@@ -1,7 +1,7 @@
-import { EventsCollector, EventsEmitter } from './event'
-import { Elevator } from './elevator'
-import { Building } from './building'
-import { build, print } from './interface'
+import { EventsCollector, EventsEmitter } from './event.ts'
+import { Elevator } from './elevator.ts'
+import { Building } from './building.ts'
+import { build, print } from './interface.ts'
 
 const floors = 10
 const speedInMiliseconds = 200

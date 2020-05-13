@@ -1,5 +1,5 @@
-import { EventsEmitter } from './event'
-import { Elevator } from './elevator'
+import { EventsEmitter } from './event.ts'
+import { Elevator } from './elevator.ts'
 
 class Building {
     private elevators: Elevator[] = []

@@ -1,4 +1,4 @@
-import { EventsEmitter } from './event'
+import { EventsEmitter } from './event.ts'
 
 class Elevator {
     private floor: number

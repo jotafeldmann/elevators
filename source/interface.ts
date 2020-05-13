@@ -1,6 +1,6 @@
 // TODO: refactor everything
-import { Elevator } from './elevator'
-import { Building } from './building'
+import { Elevator } from './elevator.ts'
+import { Building } from './building.ts'
 
 const print = (c) => console.log(c)
 
