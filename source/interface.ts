@@ -2,12 +2,12 @@
 import { Elevator } from './elevator.ts'
 import { Building } from './building.ts'
 
-const print = (c) => console.log(c)
+const print = (c: any) => console.log(c)
 
-const makeFloors = (width, building: Building, elevators: Elevator[] = []) => {
+const makeFloors = (width: number, building: Building, elevators: Elevator[] = []) => {
     const floors = building.getFloors()
     const elevatorsQt = elevators.length
-    const elevatorMap = {}
+    const elevatorMap: any = {}
     
     let floor = `|${'_'.repeat(width)}|`
 
@@ -57,11 +57,11 @@ const makeFloors = (width, building: Building, elevators: Elevator[] = []) => {
     }
 }
 
-const makeRoofTop = (width) => {
+const makeRoofTop = (width: number) => {
     print(` ${'_'.repeat(width)} `)
 }
 
-const makeGround = (width) => {
+const makeGround = (width: number) => {
     print(`${'"'.repeat(width+2)}`)
 }
 

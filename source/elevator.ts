@@ -4,12 +4,12 @@ class Elevator {
     private floor: number
     private id: string
     private speed: number = 10
-    private targetFloorsMap: object = {}
-    private targetFloorCurrent: number
-    private movement
+    private targetFloorsMap: any = {}
+    private targetFloorCurrent: number = 0
+    private movement: any
     private emiter: EventsEmitter
 
-    constructor({ id, initialFloor, speed = 100, emiter }) {
+    constructor(id: string, initialFloor: number, speed: number = 100, emiter: EventsEmitter ) {
         this.id = id
         this.floor = initialFloor
         this.emiter = emiter

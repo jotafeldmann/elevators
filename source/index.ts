@@ -11,17 +11,15 @@ const logger = new EventsCollector('logger')
 const loggerElevator = new EventsEmitter('Elevator', logger)
 const loggerBuilding = new EventsEmitter('Building', logger)
 
-const elevatorCommonProps = { initialFloor: 1, speed: speedInMiliseconds, emiter: loggerElevator }
-
 const elevatorsList = [
-    new Elevator({ id: '1', ...elevatorCommonProps }),
-    new Elevator({ id: '2', ...elevatorCommonProps }),
-    new Elevator({ id: '3', ...elevatorCommonProps }),
+    new Elevator('1', 1, speedInMiliseconds, loggerElevator),
+    new Elevator('2', 1, speedInMiliseconds, loggerElevator),
+    new Elevator('3', 1, speedInMiliseconds, loggerElevator),
 ]
 
 const building = new Building(floors, elevatorsList, loggerBuilding)
 
-const getRandomInt = (min, max) => {
+const getRandomInt = (min: number, max: number) => {
     min = Math.ceil(min);
     max = Math.floor(max + 1);
     return Math.floor(Math.random() * (max - min)) + min;
@@ -29,7 +27,7 @@ const getRandomInt = (min, max) => {
 
 const init = async () => {
     build(building, elevatorsList)
-    logger.stream('logger', e => {
+    logger.stream('logger', (e: Elevator) => {
         build(building, elevatorsList)
         print(building.getConfiguration())
         print(e)
