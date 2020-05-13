@@ -1,5 +1,5 @@
-import { EventsEmitter } from './event'
-import { Elevator } from './elevator'
+import { EventsEmitter } from './event.ts'
+import { Elevator } from './elevator.ts'
 
 class Building {
     private elevators: Elevator[] = []
@@ -26,21 +26,15 @@ class Building {
         return elevator.goToFloor(floor)
     }
 
+    private sortArrayByClosestDistance = (floor: number) => (prev: Elevator, actual: Elevator ) => {
+        if (Math.abs(prev.getFloor() - floor) < Math.abs(actual.getFloor() - floor)) return -1
+        return 1
+    }
+
     private getClosestElevatorToFloor(floor: number): Elevator {
-        let lastDistance = this.floors
-        let lastElevator = null
-        
-        this.elevators.forEach(e => {
-            
-            const distance = Math.abs(e.getFloor() - floor)
-
-            if (distance < lastDistance) {
-                lastDistance = distance
-                lastElevator = e
-            }
-        })
-
-        return lastElevator
+        const elevators = this.elevators.slice(0)
+        elevators.sort(this.sortArrayByClosestDistance(floor))
+        return elevators[0]
     }
 }
 

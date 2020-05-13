@@ -1,13 +1,13 @@
 class EventsCollector {
     private name: string
-    private events: object = {}
-    private listeners: object = {}
+    private events: any = {}
+    private listeners: any = {}
 
     constructor(name: string) {
         this.name = name
     }
 
-    collect({ source, event, data }) {
+    collect({ source, event, data }: { source: string, event: string, data: any }) {
         const id = Date.now()
         this.events[id] = { source, event, data }
         const e = this.events[id]
@@ -21,7 +21,7 @@ class EventsCollector {
         return this.events
     }
 
-    stream(name, callback) {
+    stream(name: string, callback: Function) {
         this.listeners[name] = callback
     }
 }
