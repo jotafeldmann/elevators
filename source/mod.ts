@@ -28,12 +28,14 @@ const ui = new Interface(building, elevatorsList)
 
 const init = async () => {
   ui.build()
+
   logger.stream('logger', (e: Elevator) => {
       ui.clear()
       ui.build()
       ui.print(building.getConfiguration())
       ui.print(e)
   })
+  
   setInterval(async() => building.requestElevatorAtFloor(getRandomInt(1, floors)), speedInMiliseconds)
 
   console.log(building.getConfiguration());
