@@ -62,9 +62,8 @@ make run
 - [x] Add basic visual interface
 - [x] Add continuous flow of requests
 - [x] Converted to Deno
-- [ ] Add tests to basic classes
-- [ ] Add `make tests` to basic classes
-- [ ] Add `make lint`, `make lint/fix` and `make watch` (watch, lint, tests)
+- [x] Add `make tests` to basic classes
+- [x] Add `make fmt`
 - [ ] Add CI
 - [ ] Add CLI/dynamic parameters (number of floors, elevators, speed)
 - [ ] Add metrics (e.g. waiting time, movements)
