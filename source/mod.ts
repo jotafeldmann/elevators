@@ -1,7 +1,7 @@
 import { EventsCollector, EventsEmitter } from "./event.ts";
 import { Elevator } from "./elevator.ts";
 import { Building } from "./building.ts";
-import { build, print } from "./interface.ts";
+import { Interface } from "./interface.ts";
 
 const floors = 10;
 const speedInMiliseconds = 200;
@@ -24,14 +24,17 @@ const getRandomInt = (min: number, max: number) => {
   return Math.floor(Math.random() * (max - min)) + min;
 };
 
+const ui = new Interface(building, elevatorsList)
+
 const init = async () => {
-  // build(building, elevatorsList)
-  // logger.stream('logger', (e: Elevator) => {
-  //     build(building, elevatorsList)
-  //     print(building.getConfiguration())
-  //     print(e)
-  // })
-  // setInterval(async() => building.requestElevatorAtFloor(getRandomInt(1, floors)), speedInMiliseconds)
+  ui.build()
+  logger.stream('logger', (e: Elevator) => {
+      ui.clear()
+      ui.build()
+      ui.print(building.getConfiguration())
+      ui.print(e)
+  })
+  setInterval(async() => building.requestElevatorAtFloor(getRandomInt(1, floors)), speedInMiliseconds)
 
   console.log(building.getConfiguration());
 };
