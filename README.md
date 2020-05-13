@@ -61,7 +61,7 @@ make run
 - [x] Add event controller
 - [x] Add basic visual interface
 - [x] Add continuous flow of requests
-- [x] Converted to Deno
+- [x] [Converted to Deno](https://dev.to/jotafeldmann/converting-a-node-project-to-deno-9dp)
 - [x] Add `make tests` to basic classes
 - [x] Add `make fmt`
 - [ ] Add CI
