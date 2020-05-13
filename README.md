@@ -1,5 +1,5 @@
 # elevators
-Simulating elevators
+Simulate elevators service, given a number of floors X elevators
 
 ## Purpose
 
@@ -44,6 +44,9 @@ https://github.com/denoland/deno/blob/master/docs/contributing/style_guide.md
 - [x] Add continuous flow of requests
 - [x] Converted to Deno
 - [ ] Add tests to basic classes
+- [ ] Add `make tests` to basic classes
+- [ ] Add `make lint`, `make lint/fix` and `make watch` (watch, lint, tests)
+- [ ] Add CI
 - [ ] Add CLI/dynamic parameters (number of floors, elevators, speed)
 - [ ] Add metrics (e.g. waiting time, movements)
 - [ ] Add simulation cases results
