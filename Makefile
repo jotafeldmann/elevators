@@ -20,4 +20,4 @@ test:
 	$(GO_TO_SOURCE); deno test
 
 test/watch:
-	$(GO_TO_SOURCE); denon test *_test.ts
+	$(GO_TO_SOURCE); denon --test --config denon.json

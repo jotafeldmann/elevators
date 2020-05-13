@@ -36,7 +36,7 @@ Deno.test("Testing Interface class", () => {
   '|_[1]__[2]_| 1\n' +
   '""""""""""""')) {
     console.log(`${result}`)
-    throw Error("PEI")
+    throw Error('Error on Interface building generation')
   }
 
 });

@@ -1,0 +1,18 @@
+{
+    "quiet": false,
+    "debug": true,
+    "fullscreen": false,
+    "extensions": [
+        ".test.ts",
+        ".json"
+    ],
+    "interval": 500,
+    "watch": [
+        "."
+    ],
+    "execute": {
+        ".test.ts": ["deno", "test"]
+    },
+    "fmt": false,
+    "test": true
+}
