@@ -64,7 +64,7 @@ make run
 - [x] [Converted to Deno](https://dev.to/jotafeldmann/converting-a-node-project-to-deno-9dp)
 - [x] Add `make tests` to basic classes
 - [x] Add `make fmt`
-- [ ] Add CI
+- [x] Add CI (Github Actions)
 - [ ] Add CLI/dynamic parameters (number of floors, elevators, speed)
 - [ ] Add metrics (e.g. waiting time, movements)
 - [ ] Add simulation cases results
