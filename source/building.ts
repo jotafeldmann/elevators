@@ -29,7 +29,7 @@ class Building {
 
   async requestElevatorAtFloor(floor: number): Promise<any> {
     this.emiter.emit("requestElevatorAtFloor", { floor });
-    const elevator = this.getClosestElevatorToFloor(floor);
+    const elevator = this.getDesignatedElevatorToFloor(floor);
     return elevator.goToFloor(floor);
   }
 
@@ -43,7 +43,7 @@ class Building {
       return 1;
     };
 
-  getClosestElevatorToFloor(floor: number): Elevator {
+  getDesignatedElevatorToFloor(floor: number): Elevator {
     const elevators = this.elevators.slice(0);
     elevators.sort(this.sortArrayByClosestDistance(floor));
     return elevators[0];

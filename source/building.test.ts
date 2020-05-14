@@ -38,7 +38,7 @@ Deno.test("Testing Building class", () => {
     throw Error("Error on getFloors");
   }
 
-  if (building.getClosestElevatorToFloor(1) != el1) {
-    throw Error("Error on getClosestElevatorToFloor");
+  if (building.getDesignatedElevatorToFloor(1) != el1) {
+    throw Error("Error on getDesignatedElevatorToFloor");
   }
 });
