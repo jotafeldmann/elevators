@@ -24,7 +24,7 @@ jobs:
       - name: Setup Deno
         uses: denolib/setup-deno@master
         with:
-          deno-version: 0.X
+          deno-version: v1.x
     
       - name: Run test
         run: make test
