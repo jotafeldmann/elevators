@@ -1,6 +1,11 @@
 # elevators ![CI](https://github.com/jotafeldmann/elevators/workflows/CI/badge.svg)
 Simulate elevators service, given a number of floors X elevators.
 
+## Motivation
+I use elevators everyday. But everytime I think "all this elevators behaviour can be improved, somehow".  
+So, as a programmer, I've think how to describe this challenge in a generic model, just for fun.  
+The result is this repository.
+
 ## Purpose
 
 - Simulate elevators service, given a number of floors X elevators
