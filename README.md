@@ -7,8 +7,7 @@ So, as a programmer, I'm thinking how to describe this challenge in a generic mo
 
 ## Purpose
 
-- Simulate elevators service, given a number of floors X elevators
-- Learn TypeScript
+- Simulate elevator's service, given a number of floors X elevators
 - Learn Deno
 
 ## How to use
