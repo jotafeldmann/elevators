@@ -2,9 +2,8 @@
 Simulate elevators service, given a number of floors X elevators.
 
 ## Motivation
-I use elevators everyday. But everytime I think "all this elevators behaviour can be improved, somehow".  
-So, as a programmer, I've think how to describe this challenge in a generic model, just for fun.  
-The result is this repository.
+We use elevators everyday. But everytime I think "all this elevator's behaviours can be improved, somehow".  
+So, as a programmer, I'm thinking how to describe this challenge in a generic model, just for fun.
 
 ## Purpose
 
