@@ -1,5 +1,5 @@
 # elevators ![CI](https://github.com/jotafeldmann/elevators/workflows/CI/badge.svg)
-Simulate elevators service, given a number of floors X elevators.
+Simulate elevator's service, given a number of floors X elevators.
 
 ## Motivation
 We use elevators everyday. But everytime I think "all this elevator's behaviours can be improved, somehow".  
