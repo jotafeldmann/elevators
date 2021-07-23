@@ -1,7 +1,10 @@
 # elevators ![CI](https://github.com/jotafeldmann/elevators/workflows/CI/badge.svg)
 Simulate elevator's service, given a number of floors X elevators.
 
-Try it online: https://replit.com/@jotafeldmann/elevators
+**Try it online:**
+- Go to https://replit.com/@jotafeldmann/elevators
+- Click the "shell" tab
+- Run `make dev`
 
 ## Motivation
 We use elevators everyday. But everytime I think "all this elevator's behaviours can be improved, somehow".  
